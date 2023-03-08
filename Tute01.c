@@ -5,6 +5,17 @@
 #include <stdio.h>
 
 int main() {
+   int mark1, mark2;
+   float avg;
+   printf("Enter the 1st mark:");
+   scanf("%d\n", &mark1);
+   
+   printf("Enter the second mark:");
+   scanf("%d\n", &mark2);
+   
+   avg = (mark1 +mark2)/ 2.0;
+   printf("%.2f", avg);
+   
   
   return 0;
 }
