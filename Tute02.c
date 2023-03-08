@@ -19,6 +19,21 @@ Amount = 30 x 50 + (50-30) x 40 = 2300*/
 #include <stdio.h>
 
 int main() {
+  int dt, fd, r;
+  
+  printf("Enter the distance travelled:");
+  scanf("%d\n", &dt);
+  
+  if(dt<=30)
+  {
+    r = 50;
+    fd = 50 * dt;
+  }
+  else
+  {
+    fd = (30 *dt)+(dt -30) *40;
+  }
+  printf("%d", fd);
   
   return 0;
 }
